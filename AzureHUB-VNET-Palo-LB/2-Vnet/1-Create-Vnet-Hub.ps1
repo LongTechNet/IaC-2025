@@ -12,8 +12,8 @@ $subnetname3 = "GatewaySubnet" #"GatewaySubnet"
 
 #subnets you want to deploy with address space
 [array] $subnets = @()
-$subnets += New-Object -TypeName psobject -Property @{"Name"="$subnetname1"; "AddressPrefix"="10.200.0.64/27"} #update name and address space
-$subnets += New-Object -TypeName psobject -Property @{"Name"="$subnetname2"; "AddressPrefix"="10.200.0.32/27"}
-$subnets += New-Object -TypeName psobject -Property @{"Name"="$subnetname3"; "AddressPrefix"="10.200.0.0/27"}
+$subnets += New-Object -TypeName psobject -Property @{"Name"="$subnetname1"; "AddressPrefix"="10.210.0.64/27"} #update name and address space
+$subnets += New-Object -TypeName psobject -Property @{"Name"="$subnetname2"; "AddressPrefix"="10.210.0.32/27"}
+$subnets += New-Object -TypeName psobject -Property @{"Name"="$subnetname3"; "AddressPrefix"="10.210.0.0/27"}
 
-New-AzVirtualNetwork -ResourceGroupName $rg1 -Location $loc -Name $vnetname1 -AddressPrefix "10.200.0.0/24" -Subnet $subnets 
+New-AzVirtualNetwork -ResourceGroupName $rg1 -Location $loc -Name $vnetname1 -AddressPrefix "10.210.0.0/24" -Subnet $subnets 
