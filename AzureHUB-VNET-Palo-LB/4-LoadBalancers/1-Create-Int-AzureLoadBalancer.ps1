@@ -10,7 +10,7 @@ $IlbName = "companyhub-inlb"
 $Location = "eastus"                 # Azure location
 $VMNames = "companyhubfw1" 
 
-$ILBIP = "10.200.0.75"                         # IP address
+$ILBIP = "10.210.0.75"                         # IP address
 [int]$ListenerPort = "8008"                # AG listener port
 [int]$ProbePort = "8008"                   # Probe port
 
