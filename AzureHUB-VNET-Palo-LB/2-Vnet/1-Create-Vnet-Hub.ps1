@@ -8,7 +8,7 @@ $loc = 'eastus'
 $vnetname1 = 'company.hub'
 $subnetname1 = "$VNETName1.in"
 $subnetname2 = "$VNETName1.out"
-$subnetname3 = "$VNETName1.mgmt" #"GatewaySubnet"
+$subnetname3 = "GatewaySubnet" #"GatewaySubnet"
 
 #subnets you want to deploy with address space
 [array] $subnets = @()
