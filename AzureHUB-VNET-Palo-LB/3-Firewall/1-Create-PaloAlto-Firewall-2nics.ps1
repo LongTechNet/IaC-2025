@@ -15,11 +15,11 @@ $MySecureCreds = New-Object -TypeName System.Management.Automation.PSCredential 
 ##VM1
 $AzureRGName = "company-hub"
 $vmname1 = "companyhubfw1"
-$IPAddress1 = "10.200.0.69"
-$IPAddress2 = "10.200.0.39"
+$IPAddress1 = "10.210.0.69"
+$IPAddress2 = "10.210.0.39"
 $AvailabilitySetName = ("company-hub-avset")
 $NetworkName = "company.hub"
-$VnetAddressPrefix = "10.200.0.0/24"
+$VnetAddressPrefix = "10.210.0.0/24"
 $VmSize = "Standard_Ds3_V2"
 $AzureRegion = "eastus"
 $nicname1 = "$vmname1-1"
